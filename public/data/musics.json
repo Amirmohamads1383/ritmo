@@ -1,0 +1,135 @@
+[
+    {
+        "id": 1,
+        "title": {
+            "fa": "2ja",
+            "en": "2ja"
+        },
+        "singer": {
+            "fa": "حصین",
+            "en": "ho3ein"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/music/2ja.webp",
+        "audio": "/music/2ja.mp4",
+        "trend": true,
+        "album": ""
+    },
+    {
+        "id": 2,
+        "title": {
+            "fa": "عروس",
+            "en": "aroos"
+        },
+        "singer": {
+            "fa": "مهراد هیدن",
+            "en": "hidden"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/music/aroos.webp",
+        "audio": "/music/aroos.mp4",
+        "trend": false,
+        "album": ""
+    },
+    {
+        "id": 3,
+        "title": {
+            "fa": "سرکوب",
+            "en": "sarkoob"
+        },
+        "singer": {
+            "fa": "یاس",
+            "en": "yas"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/music/sarkoob.webp",
+        "audio": "/music/sarkoob.mp4",
+        "trend": true,
+        "album": ""
+    },
+    {
+        "id": 4,
+        "title": {
+            "fa": "اماله",
+            "en": "emaale"
+        },
+        "singer": {
+            "fa": "پوری",
+            "en": "pori"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/music/emaale.webp",
+        "audio": "/music/emaale.mp4",
+        "trend": true,
+        "album": ""
+    },
+    {
+        "id": 5,
+        "title": {
+            "fa": "بچه محل",
+            "en": "bachemahal"
+        },
+        "singer": {
+            "fa": "زدبازی",
+            "en": "zedbazi"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/music/bachemahal.webp",
+        "audio": "/music/bachemahal.mp4",
+        "trend": false,
+        "album": ""
+    },
+    {
+        "id": 6,
+        "title": {
+            "fa": "بیم",
+            "en": "beem"
+        },
+        "singer": {
+            "fa": "یاس",
+            "en": "yas"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/music/beem.webp",
+        "audio": "/music/beem.mp4",
+        "trend": true,
+        "album": ""
+    },
+    {
+        "id": 7,
+        "title": {
+            "fa": "دیدگاه",
+            "en": "didgah"
+        },
+        "singer": {
+            "fa": "حصین",
+            "en": "ho3ein"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/music/didgah.webp",
+        "audio": "/music/didgah.mp4",
+        "trend": true,
+        "album": ""
+    }
+]

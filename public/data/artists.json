@@ -1,0 +1,158 @@
+[
+    {
+        "id": 1,
+        "name": {
+            "fa": "مهراد هیدن",
+            "en": "mehrad hidden"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/artists/hidden.webp",
+        "desc": ""
+    },
+    {
+        "id": 2,
+        "name": {
+            "fa": "معین",
+            "en": "moein"
+        },
+        "category": {
+            "fa": "پاپ",
+            "en": "pop"
+        },
+        "img": "/images/artists/moein.webp",
+        "desc": ""
+    },
+    {
+        "id": 3,
+        "name": {
+            "fa": "شایع",
+            "en": "shayea"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/artists/shayea.webp",
+        "desc": ""
+    },
+    {
+        "id": 4,
+        "name": {
+            "fa": "شادمهر",
+            "en": "shadmehr"
+        },
+        "category": {
+            "fa": "پاپ",
+            "en": "pop"
+        },
+        "img": "/images/artists/shadmehr.webp",
+        "desc": ""
+    },
+    {
+        "id": 5,
+        "name": {
+            "fa": "امیر تتلو",
+            "en": "tataloo"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/artists/tataloo.webp",
+        "desc": ""
+    },
+    {
+        "id": 6,
+        "name": {
+            "fa": "آرون افشار",
+            "en": "aron afshar"
+        },
+        "category": {
+            "fa": "پاپ",
+            "en": "pop"
+        },
+        "img": "/images/artists/aronafshar.webp",
+        "desc": ""
+    },
+    {
+        "id": 7,
+        "name": {
+            "fa": "ابی",
+            "en": "ebi"
+        },
+        "category": {
+            "fa": "پاپ",
+            "en": "pop"
+        },
+        "img": "/images/artists/ebi.webp",
+        "desc": ""
+    },
+    {
+        "id": 8,
+        "name": {
+            "fa": "حصین",
+            "en": "ho3ein"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/artists/ho3ein.webp",
+        "desc": ""
+    },
+    {
+        "id": 9,
+        "name": {
+            "fa": "زدبازی",
+            "en": "zedbazi"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/artists/ZedBazi.webp",
+        "desc": ""
+    },
+    {
+        "id": 10,
+        "name": {
+            "fa": "یاس",
+            "en": "yas"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/artists/yas.webp",
+        "desc": ""
+    },
+    {
+        "id": 11,
+        "name": {
+            "fa": "محسن چاووشی",
+            "en": "chavoshi"
+        },
+        "category": {
+            "fa": "پاپ",
+            "en": "pop"
+        },
+        "img": "/images/artists/chavoshi.webp",
+        "desc": ""
+    },
+    {
+        "id": 12,
+        "name": {
+            "fa": "رضا پیشرو",
+            "en": "pishro"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/artists/pishro.webp",
+        "desc": ""
+    }
+]

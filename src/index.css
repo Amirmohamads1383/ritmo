@@ -1,1 +1,87 @@
 @import "tailwindcss";
+
+@layer base {
+    @font-face {
+        font-family: PelakFA-Regular;
+        src: url(../fonts/PelakFA-Regular.woff2) format(woff2);
+    }
+
+    @font-face {
+        font-family: PelakFA-Medium;
+        src: url(../fonts/PelakFA-Medium.woff2) format(woff2);
+    }
+
+    @font-face {
+        font-family: PelakFA-SemiBold;
+        src: url(../fonts/PelakFA-SemiBold.woff2) format(woff2);
+    }
+
+    @font-face {
+        font-family: PelakFA-Bold;
+        src: url(../fonts/PelakFA-Bold.woff2) format(woff2);
+    }
+}
+
+@layer components {
+    /* Custom CSS Style */
+
+    .container {
+        width: 95% !important;
+        margin: 0 auto !important;
+    }
+
+    .container-fluid {
+        width: 100%;
+    }
+}
+
+@theme {
+    --color-Primary: #ED265D;
+    --color-Secondary: #4353FF;
+    --color-Primary-100: #FBD5E0;
+    --color-Primary-200: #F8AAC0;
+    --color-Primary-300: #F47B9D;
+    --color-Primary-400: #F1517E;
+    --color-Primary-600: #CB1145;
+    --color-Primary-700: #970C34;
+    --color-Primary-800: #680924;
+    --color-Primary-900: #340412;
+    --color-Secondary-100: #D9DCFF;
+    --color-Secondary-200: #B3BAFF;
+    --color-Secondary-300: #8E97FF;
+    --color-Secondary-400: #6875FF;
+    --color-Secondry-600: #0015FF;
+    --color-Secondry-700: #0010C2;
+    --color-Secondry-800: #000B80;
+    --color-Secondry-900: #000642;
+    --color-Natural-100: #E6E8ED;
+    --color-Natural-200: #C7CBD8;
+    --color-Natural-300: #9DA3B4;
+    --color-Natural-400: #6F7389;
+    --color-Natural-500: #55596D;
+    --color-Natural-600: #4D5465;
+    --color-Natural-700: #393E4B;
+    --color-Natural-800: #282B34;
+    --color-Natural-900: #14161A;
+    --color-Success-100: #A3D6A6;
+    --color-Success-200: #009C07;
+    --color-Success-300: #245126;
+    --color-Error-100: #F69A98;
+    --color-Error-200: #FF3632;
+    --color-Error-300: #B21310;
+    --color-Warning-100: #FFCC80;
+    --color-Warning-200: #FFA726;
+    --color-Warning-300: #B36B00;
+    --color-Info-100: #80AEFF;
+    --color-Info-200: #2979FF;
+    --color-Info-300: #0041B3;
+    --color-White: #fff;
+    --color-Black: #000;
+    --color-Menu: #101113;
+    --color-Background: #0D0D0E;
+    --font-Pelak-Regular: PelakFA-Regular;
+    --font-Pelak-Medium: PelakFA-Medium;
+    --font-Pelak-SemiBold: PelakFA-SemiBold;
+    --font-Pelak-Bold: PelakFA-Bold;
+    --breakpoint-xs: 480px;
+}
