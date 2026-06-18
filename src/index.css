@@ -97,6 +97,17 @@
                 rgba(0, 0, 0, 0.92) 82%);
         pointer-events: none;
     }
+
+    .ritmo-plus-banner {
+        background-image: url(/images/Banner/ritmo-plus.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .circle-red-gradient {
+        background: radial-gradient(circle at center, #ED265D 0%, #101113 100%);
+    }
 }
 
 @theme {
