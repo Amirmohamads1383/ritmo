@@ -108,6 +108,10 @@
     .circle-red-gradient {
         background: radial-gradient(circle at center, #ED265D 0%, #101113 100%);
     }
+    
+    .homeArtistSwiper .swiper-slide {
+        width: auto !important;
+    }
 }
 
 @theme {
