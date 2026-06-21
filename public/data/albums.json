@@ -1,5 +1,170 @@
 [
-    {},
-    {},
-    {}
+    {
+        "id": 1,
+        "name": {
+            "fa": "78",
+            "en": "78"
+        },
+        "singer": {
+            "fa": "امیر تتلو",
+            "en": "tataloo"
+        },
+        "category": "rap",
+        "img": "/images/albums/78.webp",
+        "date": "1398",
+        "musics": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "trend": true
+    },
+    {
+        "id": 2,
+        "name": {
+            "fa": "عصبانی",
+            "en": "asabani"
+        },
+        "singer": {
+            "fa": "محمدرضا شایع",
+            "en": "shayea"
+        },
+        "category": "rap",
+        "img": "/images/albums/asabani.webp",
+        "date": "1401",
+        "musics": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "trend": true
+    },
+    {
+        "id": 3,
+        "name": {
+            "fa": "تونل 1",
+            "en": "tonel-1"
+        },
+        "singer": {
+            "fa": "مهراد هیدن",
+            "en": "hidden"
+        },
+        "category": "rap",
+        "img": "/images/albums/tonel-1.webp",
+        "date": "1396",
+        "musics": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "trend": false
+    },
+    {
+        "id": 4,
+        "name": {
+            "fa": "آماده باش",
+            "en": "amadebash"
+        },
+        "singer": {
+            "fa": "محمدرضا شایع",
+            "en": "shayea"
+        },
+        "category": "rap",
+        "img": "/images/albums/amadebash.webp",
+        "date": "1403",
+        "musics": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "trend": false
+    },
+    {
+        "id": 5,
+        "name": {
+            "fa": "تونل 2",
+            "en": "tonel-2"
+        },
+        "singer": {
+            "fa": "مهراد هیدن",
+            "en": "hidden"
+        },
+        "category": "rap",
+        "img": "/images/albums/tonel-2.webp",
+        "date": "1400",
+        "musics": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "trend": true
+    },
+    {
+        "id": 6,
+        "name": {
+            "fa": "پرواز",
+            "en": "parvaz"
+        },
+        "singer": {
+            "fa": "رضا پیشرو",
+            "en": "pishro"
+        },
+        "category": "rap",
+        "img": "/images/albums/parvaz.webp",
+        "date": "1401",
+        "musics": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "trend": true
+    },
+    {
+        "id": 7,
+        "name": {
+            "fa": "ریل",
+            "en": "rail"
+        },
+        "singer": {
+            "fa": "رضا پیشرو",
+            "en": "pishro"
+        },
+        "category": "rap",
+        "img": "/images/albums/rail.webp",
+        "date": "1396",
+        "musics": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "trend": true
+    },
+    {
+        "id": 8,
+        "name": {
+            "fa": "زاخارنامه",
+            "en": "zakharname"
+        },
+        "singer": {
+            "fa": "زد بازی",
+            "en": "zedbazi"
+        },
+        "category": "rap",
+        "img": "/images/albums/zakharname.webp",
+        "date": "1392",
+        "musics": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "trend": true
+    }
 ]

@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from "react";
-import ArtistBox from "../../components/ArtistBox/ArtistBox";
+import AlbumsBox from "../../Common/AlbumsBox/AlbumsBox";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
 import "swiper/css";
+import "swiper/css/navigation";
 
-export default function ArtistBoxContainer() {
-  const [artists, setArtists] = useState([]);
-
+export default function AlbumsBoxContainer() {
+  const [albums, setAlbums] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("data/artists.json");
+      const response = await fetch("/data/albums.json");
       const data = await response.json();
-      setArtists(data);
+      setAlbums(data);
     };
-    fetchData();
+    fetchData()
   }, []);
+
   return (
     <Swiper
-      centeredSlides={false}
       spaceBetween={16}
-      className="homeArtistSwiper"
+      className="homeAlbumsSwiper"
       navigation={false}
       modules={[Navigation]}
       /* navigation={{
@@ -31,13 +31,12 @@ export default function ArtistBoxContainer() {
         320: { slidesPerView: 2 },
         640: { slidesPerView: 3 },
         768: { slidesPerView: 4 },
-        1024: { slidesPerView: 5 },
-        1200: { slidesPerView: 7 },
+        1024: { slidesPerView: 7 },
       }}
     >
-      {artists.slice(0, 12).map((artist) => (
-        <SwiperSlide key={artist.id}>
-          <ArtistBox title={artist.name.fa} img={artist.img} />
+      {albums.map((album) => (
+        <SwiperSlide key={album.id}>
+          <AlbumsBox name={album.name.fa} img={album.img} singer={album.singer.fa} nameEn={album.singer.en}/>
         </SwiperSlide>
       ))}
     </Swiper>

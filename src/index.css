@@ -112,6 +112,10 @@
     .homeArtistSwiper .swiper-slide {
         width: auto !important;
     }
+
+    .homeAlbumsSwiper .swiper-slide {
+        width: auto !important;
+    }
 }
 
 @theme {
