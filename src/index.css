@@ -166,6 +166,10 @@
         -o-border-radius: 100%;
         -webkit-filter: blur(30px);
     }
+
+    #category-page img {
+        height: 500px !important;
+    }
 }
 
 @theme {
