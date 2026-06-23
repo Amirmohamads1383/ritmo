@@ -170,6 +170,10 @@
     #category-page img {
         height: 500px !important;
     }
+
+    .artistSwiper .swiper-slide {
+        width: auto !important;
+    }
 }
 
 @theme {
