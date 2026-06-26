@@ -3,14 +3,16 @@
         "id": 1,
         "name": {
             "fa": "مهراد هیدن",
-            "en": "mehrad hidden"
+            "en": "hidden"
         },
         "category": {
             "fa": "رپ",
             "en": "rap"
         },
         "img": "/images/artists/hidden.webp",
-        "desc": ""
+        "desc": "شادمهر عقیلی یکی از برجسته‌ترین خوانندگان و آهنگسازان ایرانی است که با آثار ماندگار در سبک پاپ شهرت دارد. او با ترانه‌های احساسی، تنظیم‌های نوآورانه و مهارت در نوازندگی توانسته جایگاه ویژه‌ای در موسیقی ایران و میان مخاطبان بین‌المللی کسب کند.",
+        "trend": true,
+        "age": 40
     },
     {
         "id": 2,
@@ -23,7 +25,9 @@
             "en": "pop"
         },
         "img": "/images/artists/moein.webp",
-        "desc": ""
+        "desc": "",
+        "trend": true,
+        "age": 55
     },
     {
         "id": 3,
@@ -36,7 +40,9 @@
             "en": "rap"
         },
         "img": "/images/artists/shayea.webp",
-        "desc": ""
+        "desc": "",
+        "trend": true,
+        "age": 30
     },
     {
         "id": 4,
@@ -49,7 +55,9 @@
             "en": "pop"
         },
         "img": "/images/artists/shadmehr.webp",
-        "desc": ""
+        "desc": "",
+        "trend": false,
+        "age": 54
     },
     {
         "id": 5,
@@ -62,7 +70,9 @@
             "en": "rap"
         },
         "img": "/images/artists/tataloo.webp",
-        "desc": ""
+        "desc": "",
+        "trend": false,
+        "age": 43
     },
     {
         "id": 6,
@@ -75,7 +85,9 @@
             "en": "pop"
         },
         "img": "/images/artists/aronafshar.webp",
-        "desc": ""
+        "desc": "",
+        "trend": false,
+        "age": 32
     },
     {
         "id": 7,
@@ -88,7 +100,9 @@
             "en": "pop"
         },
         "img": "/images/artists/ebi.webp",
-        "desc": ""
+        "desc": "",
+        "trend": true,
+        "age": 66
     },
     {
         "id": 8,
@@ -101,7 +115,9 @@
             "en": "rap"
         },
         "img": "/images/artists/ho3ein.webp",
-        "desc": ""
+        "desc": "",
+        "trend": true,
+        "age": 44
     },
     {
         "id": 9,
@@ -114,7 +130,9 @@
             "en": "rap"
         },
         "img": "/images/artists/ZedBazi.webp",
-        "desc": ""
+        "desc": "",
+        "trend": true,
+        "age": 40
     },
     {
         "id": 10,
@@ -127,7 +145,9 @@
             "en": "rap"
         },
         "img": "/images/artists/yas.webp",
-        "desc": ""
+        "desc": "",
+        "trend": true,
+        "age": 42
     },
     {
         "id": 11,
@@ -140,7 +160,9 @@
             "en": "pop"
         },
         "img": "/images/artists/chavoshi.webp",
-        "desc": ""
+        "desc": "",
+        "trend": true,
+        "age": 40
     },
     {
         "id": 12,
@@ -153,6 +175,8 @@
             "en": "rap"
         },
         "img": "/images/artists/pishro.webp",
-        "desc": ""
+        "desc": "",
+        "trend": true,
+        "age": 40
     }
 ]
