@@ -6,6 +6,7 @@ import Categories from "./page/Categories/Categories";
 import CategoryItem from "./page/CategoryItem/CategoryItem";
 import Artists from "./page/Artists/Artists";
 import ArtistProfile from "./page/ArtistProfile/ArtistProfile";
+import Albums from "./page/Albums/Albums"
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/artist/:artistSlug",
         element: <ArtistProfile />,
+      },
+      {
+        path: "/album",
+        element: <Albums />,
       },
       {
         path: "/*",
