@@ -20,7 +20,7 @@ export default function NewestMusic({artists}) {
             .slice(0, 12)
             .map((artist) => (
               <SwiperSlide key={artist.id}>
-                <ArtistBox title={artist.name.fa} img={artist.img} />
+                <ArtistBox title={artist.name.fa} img={artist.img} nameEn={artist.name.en}/>
               </SwiperSlide>
             ))}
         </Swiper>

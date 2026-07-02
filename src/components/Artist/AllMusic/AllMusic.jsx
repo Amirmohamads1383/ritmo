@@ -24,7 +24,7 @@ export default function AllMusic({artists}) {
                 key={artist.id}
                 title={artist.name.fa}
                 img={artist.img}
-                id={artist.id}
+                nameEn={artist.name.en}
               />
             ))}
           </div>
