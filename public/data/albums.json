@@ -13,10 +13,86 @@
         "img": "/images/albums/78.webp",
         "date": "1398",
         "musics": [
-            "",
-            "",
-            "",
-            ""
+            {
+                "fa": "پریشب",
+                "en": "parishab",
+                "img": ""
+            },
+            {
+                "fa": "خلصه",
+                "en": "khalse",
+                "img": ""
+            },
+            {
+                "fa": "تازیانه",
+                "en": "taziane",
+                "img": ""
+            },
+            {
+                "fa": "قسم",
+                "en": "ghasam",
+                "img": ""
+            },
+            {
+                "fa": "ممه های گلشیفته",
+                "en": "mamehayegolshifteh",
+                "img": ""
+            },
+            {
+                "fa": "گرگ 2",
+                "en": "gorg-2",
+                "img": ""
+            },
+            {
+                "fa": "کی مثل تو",
+                "en": "ki-mesle-to",
+                "img": ""
+            },
+            {
+                "fa": "ولش کن",
+                "en": "velesh-kon",
+                "img": ""
+            },
+            {
+                "fa": "بزنم نفت در بیاد",
+                "en": "bezanam-naft-dar-biad",
+                "img": ""
+            },
+            {
+                "fa": "جمعه ها",
+                "en": "jome-ha",
+                "img": ""
+            },
+            {
+                "fa": "گردن من ننداز",
+                "en": "gardane-man-nandaz",
+                "img": ""
+            },
+            {
+                "fa": "در واقع",
+                "en": "darvaghe",
+                "img": ""
+            },
+            {
+                "fa": "حرمسرا",
+                "en": "haramsara",
+                "img": ""
+            },
+            {
+                "fa": "خایه باقر",
+                "en": "khaye-bagher",
+                "img": ""
+            },
+            {
+                "fa": "مال من باش",
+                "en": "male-man-bash",
+                "img": ""
+            },
+            {
+                "fa": "من 3",
+                "en": "man-3",
+                "img": ""
+            }
         ],
         "trend": true
     },
@@ -34,10 +110,26 @@
         "img": "/images/albums/asabani.webp",
         "date": "1401",
         "musics": [
-            "",
-            "",
-            "",
-            ""
+            {
+                "fa": "عصبانی",
+                "en": "asabani"
+            },
+            {
+                "fa": "یه موقع هایی 2",
+                "en": "yemoghehaei"
+            },
+            {
+                "fa": "از ما نیستی",
+                "en": "azmanisti"
+            },
+            {
+                "fa": "خالص",
+                "en": "khales"
+            },
+            {
+                "fa": "چکش",
+                "en": "chakkosh"
+            }
         ],
         "trend": true
     },

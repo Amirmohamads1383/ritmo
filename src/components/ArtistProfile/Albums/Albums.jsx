@@ -24,7 +24,7 @@ export default function Albums({ artistSlug }) {
           <Swiper slidesPerView={7} spaceBetween={16} className="mySwiper">
             {albums.map((album) => (
               <SwiperSlide key={album.id}>
-                <AlbumsBox name={album.name.fa} img={album.img} singer={""}/>
+                <AlbumsBox name={album.name.fa} img={album.img} nameEn={album.name.en}/>
               </SwiperSlide>
             ))}
           </Swiper>

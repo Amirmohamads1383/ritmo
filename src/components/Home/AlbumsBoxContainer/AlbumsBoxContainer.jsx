@@ -36,7 +36,7 @@ export default function AlbumsBoxContainer() {
     >
       {albums.map((album) => (
         <SwiperSlide key={album.id}>
-          <AlbumsBox name={album.name.fa} img={album.img} singer={album.singer.fa} nameEn={album.singer.en}/>
+          <AlbumsBox name={album.name.fa} img={album.img} singer={album.singer.fa} nameEn={album.name.en}/>
         </SwiperSlide>
       ))}
     </Swiper>

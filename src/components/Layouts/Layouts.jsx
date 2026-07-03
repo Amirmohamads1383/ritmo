@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Sidebar from "../Sidebar/Sidebar";
-import { Outlet } from "react-router";
+import { Outlet, ScrollRestoration } from "react-router";
 
 export default function Layouts() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -14,6 +14,7 @@ export default function Layouts() {
         className={`transition-all duration-300 ${showSidebar ? "mr-60" : "mr-0"}`}
       >
         <Header showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+        <ScrollRestoration />
         <main className="flex-1 relative">
           <Outlet />
         </main>
