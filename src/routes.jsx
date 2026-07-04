@@ -8,6 +8,7 @@ import Artists from "./page/Artists/Artists";
 import ArtistProfile from "./page/ArtistProfile/ArtistProfile";
 import Albums from "./page/Albums/Albums";
 import AlbumsDetail from "./page/ALbumsDetail/AlbumsDetail";
+import PlayList from "./page/PlayList/PlayList";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "/album/:albumSlug",
         element: <AlbumsDetail />,
+      },
+      {
+        path: "/playlist",
+        element: <PlayList />
       },
       {
         path: "/*",
