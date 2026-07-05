@@ -8,7 +8,7 @@ export default function Header({ showSidebar, setShowSidebar }) {
 };
 
   return (
-    <header className="py-6 bg-Menu sticky top-0 z-50">
+    <header className="py-6 bg-Menu sticky top-0 z-60">
       <div className="container">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-6">

@@ -3,6 +3,7 @@ import TitleHeader from "../Common/TitleHeader/TitleHeader";
 import Modal from "../Modal/Modal";
 import SelectPlaylist from "../Modal/SelectPlaylist/SelectPlaylist";
 import CreatePlaylist from "../Modal/CreatePlaylist/CreatePlaylist";
+import { Link } from "react-router";
 
 export default function PlayListContainer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -227,7 +228,7 @@ export default function PlayListContainer() {
                   </div>
 
                   <h3 className="text-white font-Pelak-Bold text-sm truncate">
-                    {playlist.name}
+                    <Link to={`/playlist/${playlist.id}`}>{playlist.name}</Link>
                   </h3>
                   <div className="flex items-center justify-between mt-1">
                     <p className="text-Natural-400 text-xs">
