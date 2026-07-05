@@ -164,9 +164,85 @@ export default function PlaylistDetail() {
             )}
           </div>
           <div>
-            <span className="block font-Pelak-Bold text-2xl mb-2 text-Natural-200">پلی لیست</span>
-            <h1 className="text-5xl text-white font-Pelak-Bold">{playlist.name}</h1>
-            <p className="text-Natural-400 mt-2">{playlist.totalSongs} آهنگ</p>
+            <span className="block font-Pelak-Bold text-2xl mb-2 text-Natural-200">
+              پلی لیست
+            </span>
+            <h1 className="text-5xl text-white font-Pelak-Bold">
+              {playlist.name}
+            </h1>
+            <p className="text-Natural-200 text-sm mt-4">
+              {playlist.totalSongs} آهنگ
+            </p>
+            <div className="flex items-center gap-10 mt-8">
+              <button className="flex items-center justify-center gap-2 py-3 px-4 text-white bg-Primary rounded-lg cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={20}
+                  height={20}
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="m14.99 11.545-6.658 4.051c-1.114.678-2.5-.178-2.5-1.545V5.95c0-1.367 1.386-2.223 2.5-1.545l6.658 4.051c1.123.683 1.123 2.407 0 3.09Z"
+                    stroke="#fff"
+                    strokeWidth={1.5}
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                پخش پلی لیست
+              </button>
+              <div className="flex items-center gap-4">
+                <button className="cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M7.631 10.434a3.5 3.5 0 1 0 0 3.132m0-3.132C7.867 10.906 8 11.437 8 12s-.133 1.095-.369 1.566m0-3.132 6.738-3.368m-6.738 6.5 6.738 3.368m0-9.868a3.5 3.5 0 1 0 6.26-3.132 3.5 3.5 0 0 0-6.26 3.132Zm0 9.868a3.5 3.5 0 1 0 6.262 3.131 3.5 3.5 0 0 0-6.262-3.13Z"
+                      stroke="#fff"
+                      strokeWidth={1.5}
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </button>
+                <button className="cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 8v8m4-4H8m4 10c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10"
+                      stroke="#fff"
+                      strokeWidth={1.5}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button className="cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="m19.666 3 1.903 1.94a1.52 1.52 0 0 1 0 2.12L19.666 9m-5.889-3h7.36M10.834 18H2m17.666 3 1.903-1.94a1.52 1.52 0 0 0 0-2.12L19.666 15m1.472 3h-2.25c-2.23 0-4.269-1.284-5.266-3.317l-2.634-5.366C9.991 7.284 7.952 6 5.721 6H2"
+                      stroke="#fff"
+                      strokeWidth={1.5}
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
