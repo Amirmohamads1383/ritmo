@@ -116,24 +116,25 @@ export default function PlayMusic() {
   };
 
   const getSoundIcon = () => {
-    if (isSound || volume === 0) {
+    if (!isSound || volume === 0) {
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width={36}
-          height={36}
-          viewBox="0 0 36 36"
+          width={32}
+          height={32}
+          viewBox="0 0 24 24"
           fill="none"
         >
           <path
-            d="M4.996 15v6q0 4.5 4.5 4.5h2.145c.555 0 1.11.165 1.59.45l4.38 2.745c3.78 2.37 6.885.645 6.885-3.81v-13.77c0-4.47-3.105-6.18-6.885-3.81l-4.38 2.745c-.48.285-1.035.45-1.59.45H9.496q-4.5 0-4.5 4.5Z"
+            d="M2 10.16v4q0 3 3 3h1.43c.37 0 .74.11 1.06.3l2.92 1.83c2.52 1.58 4.59.43 4.59-2.54V7.57c0-2.98-2.07-4.12-4.59-2.54L7.49 6.86c-.32.19-.69.3-1.06.3H5q-3 0-3 3Z"
             stroke="#fff"
             strokeWidth={1.5}
           />
           <path
-            d="M28.996 12a9.99 9.99 0 0 1 0 12"
+            d="m22 14.12-3.96-3.96m3.92.04L18 14.16"
             stroke="#fff"
             strokeWidth={1.5}
+            strokeMiterlimit={10}
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -143,18 +144,18 @@ export default function PlayMusic() {
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width={36}
-          height={36}
-          viewBox="0 0 36 36"
+          width={32}
+          height={32}
+          viewBox="0 0 24 24"
           fill="none"
         >
           <path
-            d="M4.996 15v6q0 4.5 4.5 4.5h2.145c.555 0 1.11.165 1.59.45l4.38 2.745c3.78 2.37 6.885.645 6.885-3.81v-13.77c0-4.47-3.105-6.18-6.885-3.81l-4.38 2.745c-.48.285-1.035.45-1.59.45H9.496q-4.5 0-4.5 4.5Z"
+            d="M3.33 10v4q0 3 3 3h1.43c.37 0 .74.11 1.06.3l2.92 1.83c2.52 1.58 4.59.43 4.59-2.54V7.41c0-2.98-2.07-4.12-4.59-2.54L8.82 6.7c-.32.19-.69.3-1.06.3H6.33q-3 0-3 3Z"
             stroke="#fff"
             strokeWidth={1.5}
           />
           <path
-            d="M28.996 12a9.99 9.99 0 0 1 0 12"
+            d="M19.33 8a6.66 6.66 0 0 1 0 8"
             stroke="#fff"
             strokeWidth={1.5}
             strokeLinecap="round"
@@ -166,18 +167,18 @@ export default function PlayMusic() {
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width={36}
-          height={36}
-          viewBox="0 0 36 36"
+          width={32}
+          height={32}
+          viewBox="0 0 24 24"
           fill="none"
         >
           <path
-            d="M4.996 15v6q0 4.5 4.5 4.5h2.145c.555 0 1.11.165 1.59.45l4.38 2.745c3.78 2.37 6.885.645 6.885-3.81v-13.77c0-4.47-3.105-6.18-6.885-3.81l-4.38 2.745c-.48.285-1.035.45-1.59.45H9.496q-4.5 0-4.5 4.5Z"
+            d="M2 10v4q0 3 3 3h1.43c.37 0 .74.11 1.06.3l2.92 1.83c2.52 1.58 4.59.43 4.59-2.54V7.41c0-2.98-2.07-4.12-4.59-2.54L7.49 6.7c-.32.19-.69.3-1.06.3H5q-3 0-3 3Z"
             stroke="#fff"
             strokeWidth={1.5}
           />
           <path
-            d="M28.996 8a6.66 6.66 0 0 1 0 8"
+            d="M18 8a6.66 6.66 0 0 1 0 8m1.83-10.5a10.83 10.83 0 0 1 0 13"
             stroke="#fff"
             strokeWidth={1.5}
             strokeLinecap="round"
@@ -218,11 +219,9 @@ export default function PlayMusic() {
             </div>
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-3">
-                <span className="text-neutral-200">
-                  {formatTime(currentTime)}
-                </span>
+                <span className="text-neutral-200">{formatTime(duration)}</span>
                 <div
-                  className="h-1 w-full bg-Natural-300 rounded-full cursor-pointer"
+                  className="h-1 w-full bg-Natural-300 rounded-full cursor-pointer ltr"
                   onClick={(e) => {
                     const rect = e.currentTarget.getBoundingClientRect();
                     const x = (e.clientX - rect.left) / rect.width;
@@ -234,11 +233,13 @@ export default function PlayMusic() {
                   }}
                 >
                   <div
-                    className="h-full bg-white rounded-full"
+                    className="h-full bg-Primary rounded-full"
                     style={{ width: `${(currentTime / duration) * 100}%` }}
                   />
                 </div>
-                <span className="text-neutral-200">{formatTime(duration)}</span>
+                <span className="text-neutral-200">
+                  {formatTime(currentTime)}
+                </span>
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
@@ -249,7 +250,7 @@ export default function PlayMusic() {
                     step="0.01"
                     value={volume}
                     onChange={handleVolumeChange}
-                    className="w-32 h-1 rounded-full bg-Natural-300 cursor-pointer accent-white"
+                    className="w-32 h-1 rounded-full bg-Natural-300 cursor-pointer accent-Primary ltr"
                   />
                   <button className="cursor-pointer" onClick={soundHandler}>
                     {getSoundIcon()}
@@ -309,13 +310,13 @@ export default function PlayMusic() {
                         xmlns="http://www.w3.org/2000/svg"
                         width={42}
                         height={42}
-                        viewBox="0 0 42 42"
+                        viewBox="0 0 24 24"
                         fill="none"
                       >
                         <path
-                          d="M14 10h4.5c1.933 0 3.5 1.567 3.5 3.5v15c0 1.933-1.567 3.5-3.5 3.5H14m10.5-22h4.5c1.933 0 3.5 1.567 3.5 3.5v15c0 1.933-1.567 3.5-3.5 3.5h-4.5"
+                          d="M5 7.714C5 6.768 5.784 6 6.75 6H8.5c.966 0 1.75.768 1.75 1.714v8.572c0 .947-.784 1.714-1.75 1.714H6.75C5.784 18 5 17.233 5 16.286zm8.75 0c0-.946.784-1.714 1.75-1.714h1.75c.966 0 1.75.768 1.75 1.714v8.572c0 .947-.784 1.714-1.75 1.714H15.5c-.966 0-1.75-.767-1.75-1.714z"
                           stroke="#fff"
-                          strokeWidth={1.5}
+                          strokeWidth={1}
                         />
                       </svg>
                     )}

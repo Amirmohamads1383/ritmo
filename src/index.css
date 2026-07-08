@@ -205,6 +205,10 @@
         -ms-border-radius: 100%;
         -o-border-radius: 100%;
     }
+
+    .ltr {
+        direction: ltr;
+    }
 }
 
 @theme {
