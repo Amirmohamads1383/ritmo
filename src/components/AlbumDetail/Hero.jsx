@@ -39,7 +39,7 @@ export default function Hero({ name, img, singer, time, musicLenght }) {
                 </h2>
               </div>
               <div className="flex items-center gap-5 font-Pelak-Medium text-Natural-200">
-                <span>{`${musicLenght.lenght} آهنگ`}</span>
+                <span>{`${musicLenght} آهنگ`}</span>
                 <span></span>
                 <span>{time}</span>
               </div>

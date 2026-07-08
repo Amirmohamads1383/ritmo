@@ -149,8 +149,17 @@ export default function PlaylistDetail() {
   }
 
   return (
-    <div className="py-16">
-      <div className="container">
+    <>
+      <div className="py-16 container relative">
+        <div
+          className="absolute inset-0 -z-10"
+          style={{
+            backgroundImage: `url("${playlist?.songs?.[0]?.img || "/default-cover.jpg"}")`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            filter: "blur(20px)",
+          }}
+        />
         <div className="flex items-center gap-10 mb-8">
           <div className="w-72 h-72 bg-Natural-800 rounded-lg flex items-center justify-center overflow-hidden">
             {playlist.songs.length > 0 ? (
@@ -245,8 +254,9 @@ export default function PlaylistDetail() {
             </div>
           </div>
         </div>
-
-        {/* بخش جستجو */}
+      </div>
+      {/* بخش جستجو */}
+      <section className="container">
         <div className="mb-8">
           <div className="relative">
             <input
@@ -296,11 +306,6 @@ export default function PlaylistDetail() {
                         <p className="text-white">{song.title.fa}</p>
                         <p className="text-Natural-400 text-sm">
                           {song.singer.fa}
-                          {song.trend && (
-                            <span className="mr-2 text-xs bg-Primary/20 text-Primary px-2 py-0.5 rounded-full">
-                              🔥 ترند
-                            </span>
-                          )}
                         </p>
                       </div>
                     </div>
@@ -320,7 +325,9 @@ export default function PlaylistDetail() {
             </div>
           )}
         </div>
+      </section>
 
+      <section className="container pb-8">
         {/* لیست آهنگ‌های پلی‌لیست */}
         {playlist.songs.length > 0 ? (
           <div className="">
@@ -454,7 +461,7 @@ export default function PlaylistDetail() {
             <p className="text-Natural-400">این پلی‌لیست خالی است</p>
           </div>
         )}
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
