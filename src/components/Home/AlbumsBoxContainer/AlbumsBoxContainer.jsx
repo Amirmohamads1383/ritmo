@@ -6,7 +6,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-export default function AlbumsBoxContainer() {
+export default function AlbumsBoxContainer({ prevRef, nextRef }) {
   const [albums, setAlbums] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
@@ -14,19 +14,18 @@ export default function AlbumsBoxContainer() {
       const data = await response.json();
       setAlbums(data);
     };
-    fetchData()
+    fetchData();
   }, []);
 
   return (
     <Swiper
       spaceBetween={16}
       className="homeAlbumsSwiper"
-      navigation={false}
       modules={[Navigation]}
-      /* navigation={{
-          prevEl: prevRef.current,
-          nextEl: nextRef.current,
-        }} */
+      navigation={{
+        prevEl: prevRef.current,
+        nextEl: nextRef.current,
+      }}
       breakpoints={{
         320: { slidesPerView: 2 },
         640: { slidesPerView: 3 },
@@ -36,7 +35,12 @@ export default function AlbumsBoxContainer() {
     >
       {albums.map((album) => (
         <SwiperSlide key={album.id}>
-          <AlbumsBox name={album.name.fa} img={album.img} singer={album.singer.fa} nameEn={album.name.en}/>
+          <AlbumsBox
+            name={album.name.fa}
+            img={album.img}
+            singer={album.singer.fa}
+            nameEn={album.name.en}
+          />
         </SwiperSlide>
       ))}
     </Swiper>

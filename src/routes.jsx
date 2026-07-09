@@ -11,6 +11,7 @@ import AlbumsDetail from "./page/ALbumsDetail/AlbumsDetail";
 import PlayList from "./page/PlayList/PlayList";
 import PlaylistDetail from "./page/PlaylistDetail/PlaylistDetail";
 import PlayMusic from "./page/PlayMusic/PlayMusic";
+import EmptyLayouts from "./components/Layouts/EmptyLayouts";
 
 const router = createBrowserRouter([
   {
@@ -54,12 +55,17 @@ const router = createBrowserRouter([
         element: <PlaylistDetail />,
       },
       {
-        path: "/play-music/:id",
-        element: <PlayMusic />,
-      },
-      {
         path: "/*",
         element: <Error404 />,
+      },
+    ],
+  },
+  {
+    element: <EmptyLayouts />,
+    children: [
+      {
+        path: "/play-music/:id",
+        element: <PlayMusic />,
       },
     ],
   },

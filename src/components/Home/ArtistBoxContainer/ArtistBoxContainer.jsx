@@ -5,7 +5,7 @@ import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 
-export default function ArtistBoxContainer() {
+export default function ArtistBoxContainer({ prevRef, nextRef }) {
   const [artists, setArtists] = useState([]);
 
   useEffect(() => {
@@ -21,12 +21,11 @@ export default function ArtistBoxContainer() {
       centeredSlides={false}
       spaceBetween={16}
       className="homeArtistSwiper"
-      navigation={false}
       modules={[Navigation]}
-      /* navigation={{
-          prevEl: prevRef.current,
-          nextEl: nextRef.current,
-        }} */
+      navigation={{
+        prevEl: prevRef.current,
+        nextEl: nextRef.current,
+      }}
       breakpoints={{
         320: { slidesPerView: 2 },
         640: { slidesPerView: 3 },

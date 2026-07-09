@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 
 export default function PlayMusic() {
   const { id } = useParams();
@@ -12,6 +12,7 @@ export default function PlayMusic() {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [volume, setVolume] = useState(1);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchMusic = async () => {
@@ -199,9 +200,16 @@ export default function PlayMusic() {
 
   return (
     <section>
-      <div className="w-full h-full">
-        <div className="container">
-          <div className="flex flex-col gap-20">
+      <div
+        className="w-full h-screen bg-no-repeat relative"
+        style={{
+          background: `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url("${music.img}")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="container absolute bottom-0 left-0 right-0">
+          <div className="flex flex-col gap-20 pb-16">
             <div className="flex items-center gap-8">
               <img
                 className="w-26 h-26 object-cover rounded-lg"
@@ -464,6 +472,24 @@ export default function PlayMusic() {
             </div>
           </div>
           <audio ref={audioRef} src={music.audio} />
+          <button className="absolute right-0 -top-full flex items-center justify-center gap-2 cursor-pointer text-white border px-3 py-2 rounded-lg" onClick={() => navigate(-1)}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={32}
+              height={32}
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                d="M18.667 21.333 24 16l-5.333-5.334M24 16H8"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            <span>بازگشت به صفحه قبل</span>
+          </button>
         </div>
       </div>
     </section>
