@@ -27,6 +27,7 @@ export default function AllAlbums({albums}) {
                 img={album.img}
                 id={album.id}
                 nameEn={album.name.en}
+                singerEn={album.singer.en}
               />
             ))}
           </div>

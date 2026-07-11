@@ -1,18 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import ArtistBox from "../../Common/ArtistBox/ArtistBox";
 import TitleHeader from "../../Common/TitleHeader/TitleHeader";
+import { Navigation } from "swiper/modules";
 
-export default function TrendMusic({artists}) {
+export default function TrendMusic({ artists }) {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
   return (
     <section className="py-16">
       <div className="container">
-        <TitleHeader title={"خواننده ترند"} arrow={true} />
+        <TitleHeader
+          title={"خواننده ترند"}
+          arrow={true}
+          prevRef={prevRef}
+          nextRef={nextRef}
+        />
         <Swiper
           slidesPerView={7}
           centeredSlides={false}
           spaceBetween={16}
+          modules={[Navigation]}
+          navigation={{
+            prevEl: prevRef.current,
+            nextEl: nextRef.current,
+          }}
           id="artist-swiper"
         >
           {artists

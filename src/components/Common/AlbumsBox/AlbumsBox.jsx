@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 
-export default function AlbumsBox({ name, img, singer, nameEn }) {
+export default function AlbumsBox({ name, img, singer, nameEn, singerEn }) {
   return (
     <div className="flex flex-col items-center justify-center">
       <Link to={`/album/${nameEn}`}>
@@ -15,7 +15,7 @@ export default function AlbumsBox({ name, img, singer, nameEn }) {
         <Link to={`/album/${nameEn}`}>
           <h3 className="font-Pelak-Bold text-base text-white">{name}</h3>
         </Link>
-        <Link>
+        <Link to={`/artist/${singerEn}`}>
           <span className="text-sm text-Natural-300">{singer}</span>
         </Link>
       </div>

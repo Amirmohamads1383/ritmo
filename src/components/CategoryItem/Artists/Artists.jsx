@@ -37,6 +37,7 @@ export default function Artists({ artists, category }) {
               <ArtistBox
                 title={artist.name.fa}
                 img={artist.img}
+                nameEn={artist.name.en}
                 id={artist.id}
               />
             </SwiperSlide>

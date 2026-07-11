@@ -39,6 +39,7 @@ export default function AlbumsBoxContainer({ prevRef, nextRef }) {
             name={album.name.fa}
             img={album.img}
             singer={album.singer.fa}
+            singerEn={album.singer.en}
             nameEn={album.name.en}
           />
         </SwiperSlide>

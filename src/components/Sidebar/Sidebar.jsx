@@ -89,7 +89,7 @@ export default function Sidebar({
                 >
                   <g
                     clipPath="url(#a)"
-                    stroke="#fff"
+                    stroke="currentColor"
                     strokeWidth={1.5}
                     strokeLinejoin="round"
                   >
