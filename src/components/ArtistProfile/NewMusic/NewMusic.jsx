@@ -42,7 +42,7 @@ export default function NewMusic({ artistSlug }) {
           >
             {musics.map((music) => (
               <SwiperSlide key={music.id}>
-                <MusicBox title={music.title.fa} img={music.img} />
+                <MusicBox title={music.title.fa} img={music.img} id={music.id}/>
               </SwiperSlide>
             ))}
           </Swiper>

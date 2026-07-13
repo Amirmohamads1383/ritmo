@@ -168,10 +168,38 @@
         "img": "/images/albums/amadebash.webp",
         "date": "1403",
         "musics": [
-            "",
-            "",
-            "",
-            ""
+            {
+                "fa": "آماده باش",
+                "en": "amadebash"
+            },
+            {
+                "fa": "بابا به به",
+                "en": "baba-bah-bah"
+            },
+            {
+                "fa": "یه جا یه هو بر میخوره بهت",
+                "en": "yeja-yeho-barmikhore-behet"
+            },
+            {
+                "fa": "موجی",
+                "en": "moji"
+            },
+            {
+                "fa": "ول کن",
+                "en": "vel-kon"
+            },
+            {
+                "fa": "استثنایی",
+                "en": "estesnaei"
+            },
+            {
+                "fa": "عقده ای",
+                "en": "oghdei"
+            },
+            {
+                "fa": "واویلا",
+                "en": "vaveyla"
+            }
         ],
         "trend": false
     },

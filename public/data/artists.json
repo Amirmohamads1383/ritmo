@@ -178,5 +178,35 @@
         "desc": "",
         "trend": true,
         "age": 40
+    },
+    {
+        "id": 13,
+        "name": {
+            "fa": "عرفان پایدار",
+            "en": "erfan"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/artists/erfan.webp",
+        "desc": "",
+        "trend": true,
+        "age": 40
+    },
+    {
+        "id": 14,
+        "name": {
+            "fa": "سروش هیچکس",
+            "en": "hichkas"
+        },
+        "category": {
+            "fa": "رپ",
+            "en": "rap"
+        },
+        "img": "/images/artists/hichkas.webp",
+        "desc": "",
+        "trend": true,
+        "age": 43
     }
 ]

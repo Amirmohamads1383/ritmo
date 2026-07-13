@@ -340,15 +340,19 @@ export default function PlaylistDetail() {
                   <div className="font-Pelak-Regular text-xl text-white">
                     {index + 1}
                   </div>
-                  <img
-                    src={song.img || "/default-cover.jpg"}
-                    className="w-16 h-16 rounded object-cover"
-                    alt={song.title.fa}
-                  />
+                  <Link to={`/play-music/${song.id}`}>
+                    <img
+                      src={song.img || "/default-cover.jpg"}
+                      className="w-16 h-16 rounded object-cover"
+                      alt={song.title.fa}
+                    />
+                  </Link>
                   <div className="flex flex-col gap-1">
+                    <Link to={`/play-music/${song.id}`}>
                     <span className="font-Pelak-Bold text-lg text-white">
                       {song.title.fa}
                     </span>
+                    </Link>
                     <span className="font-Pelak-Regular text-Natural-300">
                       {song.singer.fa}
                     </span>

@@ -179,8 +179,8 @@ export default function PlayListContainer() {
                           {playlist.songs.slice(0, 4).map((song, index) => (
                             <img
                               key={index}
-                              src={song.cover || "/default-cover.jpg"}
-                              alt={song.title}
+                              src={song.img || "/default-cover.jpg"}
+                              alt={song.title?.fa || ""}
                               className="w-full h-full object-cover"
                             />
                           ))}
